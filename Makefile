@@ -1,3 +1,4 @@
 
 GOCMD=go
 GOBUILD=$(GOCMD) build
+GOCLEAN=$(GOCMD) clean
