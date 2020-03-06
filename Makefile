@@ -1,0 +1,3 @@
+
+GOCMD=go
+GOBUILD=$(GOCMD) build
