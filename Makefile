@@ -11,3 +11,7 @@ COMMIT=$(shell git rev-parse --short HEAD)
 LDFLAGS=-ldflags "-X=main.version=$(VERSION) -X=main.buildTime=$(BUILD_TIME) -X main.gitCommit=$(COMMIT)"
 
 all: build
+
+.PHONY: build
+build:
+	rm -rf ./build/;
