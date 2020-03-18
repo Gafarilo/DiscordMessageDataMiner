@@ -18,3 +18,6 @@ build:
 	mkdir ./build;
 	cp -r ./config.toml ./build/
 	$(MAKE) -s go-build
+
+go-build:
+	@GOPATH=$(GOPATH) go build $(LDFLAGS) -o ./build/$(BINARY_NAME)
