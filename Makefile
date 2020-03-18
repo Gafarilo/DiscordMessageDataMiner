@@ -15,3 +15,6 @@ all: build
 .PHONY: build
 build:
 	rm -rf ./build/;
+	mkdir ./build;
+	cp -r ./config.toml ./build/
+	$(MAKE) -s go-build
