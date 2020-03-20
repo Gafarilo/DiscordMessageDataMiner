@@ -21,3 +21,4 @@ build:
 
 go-build:
 	@GOPATH=$(GOPATH) go build $(LDFLAGS) -o ./build/$(BINARY_NAME)
+
