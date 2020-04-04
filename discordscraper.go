@@ -8,3 +8,5 @@ import (
 	"log"
     "fmt"
 )
+
+var version string
