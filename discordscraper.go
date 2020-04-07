@@ -11,3 +11,6 @@ import (
 
 var version string
 var gitCommit string
+var buildTime string
+
+func main() {
