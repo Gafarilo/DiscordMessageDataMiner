@@ -10,3 +10,4 @@ import (
 )
 
 var version string
+var gitCommit string
