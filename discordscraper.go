@@ -19,3 +19,4 @@ func main() {
 	flag.Parse()
 
     if *versionFlag {
+        fmt.Println("Version: " + version)
