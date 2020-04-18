@@ -17,3 +17,5 @@ func main() {
 	configPath := flag.String("config", "./config.toml", "Path to config.toml")
     versionFlag := flag.Bool("v", false, "Show version")
 	flag.Parse()
+
+    if *versionFlag {
