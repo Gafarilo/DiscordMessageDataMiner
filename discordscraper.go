@@ -24,3 +24,5 @@ func main() {
         fmt.Println("Built: " + buildTime)
         return;
     }
+
+	var config scraper.Config
