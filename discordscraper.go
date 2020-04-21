@@ -21,3 +21,5 @@ func main() {
     if *versionFlag {
         fmt.Println("Version: " + version)
         fmt.Println("Commit: " + gitCommit)
+        fmt.Println("Built: " + buildTime)
+        return;
