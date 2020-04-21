@@ -28,3 +28,4 @@ func main() {
 	var config scraper.Config
 	if _, err := toml.DecodeFile(*configPath, &config); err != nil {
 		log.Fatal(err.Error())
+	}
