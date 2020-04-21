@@ -31,3 +31,4 @@ func main() {
 	}
 
 	scraper := scraper.NewServerScraper(&config)
+	err := scraper.InitScraper()
