@@ -29,3 +29,5 @@ func main() {
 	if _, err := toml.DecodeFile(*configPath, &config); err != nil {
 		log.Fatal(err.Error())
 	}
+
+	scraper := scraper.NewServerScraper(&config)
