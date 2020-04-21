@@ -20,3 +20,4 @@ func main() {
 
     if *versionFlag {
         fmt.Println("Version: " + version)
+        fmt.Println("Commit: " + gitCommit)
