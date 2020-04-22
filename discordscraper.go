@@ -34,3 +34,5 @@ func main() {
 	err := scraper.InitScraper()
 
 	if err != nil {
+		log.Fatalf(err.Error())
+	}
