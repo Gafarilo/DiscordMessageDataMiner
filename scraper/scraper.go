@@ -5,3 +5,5 @@ import (
 	"bufio"
 	"github.com/bwmarrin/discordgo"
 	"log"
+	"os"
+	"sync"
