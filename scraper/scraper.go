@@ -13,3 +13,5 @@ type ServerScraper struct {
 	botConf *Config
 	sesh *discordgo.Session
 }
+
+func NewServerScraper(config *Config) *ServerScraper {
