@@ -11,3 +11,5 @@ import (
 
 type ServerScraper struct {
 	botConf *Config
+	sesh *discordgo.Session
+}
