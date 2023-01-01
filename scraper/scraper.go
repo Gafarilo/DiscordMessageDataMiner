@@ -8,3 +8,5 @@ import (
 	"os"
 	"sync"
 )
+
+type ServerScraper struct {
