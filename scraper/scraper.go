@@ -10,3 +10,4 @@ import (
 )
 
 type ServerScraper struct {
+	botConf *Config
