@@ -19,3 +19,5 @@ func NewServerScraper(config *Config) *ServerScraper {
 		botConf: config,
 	}
 }
+
+func (sc *ServerScraper) InitScraper() error {
