@@ -18,3 +18,4 @@ func NewServerScraper(config *Config) *ServerScraper {
 	return &ServerScraper{
 		botConf: config,
 	}
+}
