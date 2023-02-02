@@ -24,3 +24,4 @@ func (sc *ServerScraper) InitScraper() error {
 	log.Println("Initializing Discord Server Scraper")
 
 	var err error
+	sc.sesh, err = discordgo.New("Bot " + sc.botConf.DiscordToken)
