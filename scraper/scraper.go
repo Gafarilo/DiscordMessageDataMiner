@@ -22,3 +22,5 @@ func NewServerScraper(config *Config) *ServerScraper {
 
 func (sc *ServerScraper) InitScraper() error {
 	log.Println("Initializing Discord Server Scraper")
+
+	var err error
