@@ -25,3 +25,9 @@ func (sc *ServerScraper) InitScraper() error {
 
 	var err error
 	sc.sesh, err = discordgo.New("Bot " + sc.botConf.DiscordToken)
+
+	if err != nil {
+		return err
+	}
+
+	err = sc.sesh.Open()
