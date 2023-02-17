@@ -31,3 +31,5 @@ func (sc *ServerScraper) InitScraper() error {
 	}
 
 	err = sc.sesh.Open()
+	if err != nil {
+		return err
