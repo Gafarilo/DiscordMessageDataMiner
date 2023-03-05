@@ -37,3 +37,4 @@ func (sc *ServerScraper) InitScraper() error {
 
 	// Get an array of text channels
 	var textChannels []*discordgo.Channel
+	for _, guild := range sc.sesh.State.Guilds {
