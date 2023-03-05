@@ -34,3 +34,6 @@ func (sc *ServerScraper) InitScraper() error {
 	if err != nil {
 		return err
 	}
+
+	// Get an array of text channels
+	var textChannels []*discordgo.Channel
