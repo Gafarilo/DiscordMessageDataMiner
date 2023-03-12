@@ -44,3 +44,6 @@ func (sc *ServerScraper) InitScraper() error {
 				continue
 			}else {
 				textChannels = append(textChannels, c)
+			}
+
+		}
