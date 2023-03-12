@@ -47,3 +47,6 @@ func (sc *ServerScraper) InitScraper() error {
 			}
 
 		}
+	}
+
+	dumpPath := "./dump"
