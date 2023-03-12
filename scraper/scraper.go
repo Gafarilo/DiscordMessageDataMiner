@@ -42,3 +42,5 @@ func (sc *ServerScraper) InitScraper() error {
 		for _, c := range channels {
 			if c.Type != discordgo.ChannelTypeGuildText {
 				continue
+			}else {
+				textChannels = append(textChannels, c)
