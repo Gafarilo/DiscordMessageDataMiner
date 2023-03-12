@@ -38,3 +38,7 @@ func (sc *ServerScraper) InitScraper() error {
 	// Get an array of text channels
 	var textChannels []*discordgo.Channel
 	for _, guild := range sc.sesh.State.Guilds {
+		channels, _ := sc.sesh.GuildChannels(guild.ID)
+		for _, c := range channels {
+			if c.Type != discordgo.ChannelTypeGuildText {
+				continue
