@@ -53,3 +53,5 @@ func (sc *ServerScraper) InitScraper() error {
 	os.Mkdir(dumpPath, os.ModePerm)
 
 	var wg sync.WaitGroup
+	for _, channel := range textChannels {
+		log.Printf("Starting dump for %s\n", channel.Name)
