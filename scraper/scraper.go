@@ -55,3 +55,5 @@ func (sc *ServerScraper) InitScraper() error {
 	var wg sync.WaitGroup
 	for _, channel := range textChannels {
 		log.Printf("Starting dump for %s\n", channel.Name)
+		wg.Add(1)
+		go sc.BulkDownloadMessages(&wg, channel, dumpPath)
