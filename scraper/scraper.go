@@ -50,3 +50,4 @@ func (sc *ServerScraper) InitScraper() error {
 	}
 
 	dumpPath := "./dump"
+	os.Mkdir(dumpPath, os.ModePerm)
