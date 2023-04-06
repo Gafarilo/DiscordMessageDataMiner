@@ -57,3 +57,5 @@ func (sc *ServerScraper) InitScraper() error {
 		log.Printf("Starting dump for %s\n", channel.Name)
 		wg.Add(1)
 		go sc.BulkDownloadMessages(&wg, channel, dumpPath)
+	}
+	wg.Wait()
