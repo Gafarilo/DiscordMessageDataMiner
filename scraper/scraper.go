@@ -59,3 +59,5 @@ func (sc *ServerScraper) InitScraper() error {
 		go sc.BulkDownloadMessages(&wg, channel, dumpPath)
 	}
 	wg.Wait()
+
+	sc.sesh.Close()
