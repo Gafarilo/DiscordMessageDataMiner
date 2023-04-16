@@ -65,3 +65,5 @@ func (sc *ServerScraper) InitScraper() error {
 }
 
 func (sc *ServerScraper) BulkDownloadMessages(wg *sync.WaitGroup, channel *discordgo.Channel, dumpPath string) {
+	defer wg.Done()
+	var messages []*discordgo.Message
