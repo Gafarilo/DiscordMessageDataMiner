@@ -63,3 +63,5 @@ func (sc *ServerScraper) InitScraper() error {
 	sc.sesh.Close()
 	return nil
 }
+
+func (sc *ServerScraper) BulkDownloadMessages(wg *sync.WaitGroup, channel *discordgo.Channel, dumpPath string) {
