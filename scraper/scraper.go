@@ -62,3 +62,4 @@ func (sc *ServerScraper) InitScraper() error {
 
 	sc.sesh.Close()
 	return nil
+}
