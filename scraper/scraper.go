@@ -61,3 +61,4 @@ func (sc *ServerScraper) InitScraper() error {
 	wg.Wait()
 
 	sc.sesh.Close()
+	return nil
