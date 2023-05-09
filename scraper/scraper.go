@@ -68,3 +68,5 @@ func (sc *ServerScraper) BulkDownloadMessages(wg *sync.WaitGroup, channel *disco
 	defer wg.Done()
 	var messages []*discordgo.Message
 	var err error
+
+	// Create dump file to write to
