@@ -73,3 +73,5 @@ func (sc *ServerScraper) BulkDownloadMessages(wg *sync.WaitGroup, channel *disco
 	var dumpFile *os.File
 	dumpFile, err = os.Create(dumpPath + "/dump-" + channel.Name + ".txt")
 	if err != nil {
+		log.Fatal(err.Error())
+	}
