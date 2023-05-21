@@ -75,3 +75,5 @@ func (sc *ServerScraper) BulkDownloadMessages(wg *sync.WaitGroup, channel *disco
 	if err != nil {
 		log.Fatal(err.Error())
 	}
+	defer dumpFile.Close()
+	dumpWriter := bufio.NewWriter(dumpFile)
