@@ -79,3 +79,5 @@ func (sc *ServerScraper) BulkDownloadMessages(wg *sync.WaitGroup, channel *disco
 	dumpWriter := bufio.NewWriter(dumpFile)
 
 	doneDumping := false
+	beforeID := ""
+	for !doneDumping {
