@@ -83,3 +83,5 @@ func (sc *ServerScraper) BulkDownloadMessages(wg *sync.WaitGroup, channel *disco
 	for !doneDumping {
 		// Get all the messages we can (max is a limit per API call)
 		messages, err = sc.sesh.ChannelMessages(channel.ID, 100, beforeID, "", "")
+		if err != nil {
+			log.Fatal(err.Error())
