@@ -85,3 +85,4 @@ func (sc *ServerScraper) BulkDownloadMessages(wg *sync.WaitGroup, channel *disco
 		messages, err = sc.sesh.ChannelMessages(channel.ID, 100, beforeID, "", "")
 		if err != nil {
 			log.Fatal(err.Error())
+		}
