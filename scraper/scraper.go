@@ -89,3 +89,5 @@ func (sc *ServerScraper) BulkDownloadMessages(wg *sync.WaitGroup, channel *disco
 
 		if len(messages) == 0 {
 			doneDumping = true
+			break
+		}
