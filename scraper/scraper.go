@@ -95,3 +95,4 @@ func (sc *ServerScraper) BulkDownloadMessages(wg *sync.WaitGroup, channel *disco
 		// Loop through all the messages we fetched
 		for _, msg := range messages {
 			// Grab the last ID to get more messages from before
+			beforeID = msg.ID
