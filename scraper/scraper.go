@@ -96,3 +96,5 @@ func (sc *ServerScraper) BulkDownloadMessages(wg *sync.WaitGroup, channel *disco
 		for _, msg := range messages {
 			// Grab the last ID to get more messages from before
 			beforeID = msg.ID
+			dumpWriter.WriteString(msg.Content + "\n")
+		}
