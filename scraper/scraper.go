@@ -98,3 +98,4 @@ func (sc *ServerScraper) BulkDownloadMessages(wg *sync.WaitGroup, channel *disco
 			beforeID = msg.ID
 			dumpWriter.WriteString(msg.Content + "\n")
 		}
+	}
