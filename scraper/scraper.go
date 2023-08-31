@@ -99,3 +99,5 @@ func (sc *ServerScraper) BulkDownloadMessages(wg *sync.WaitGroup, channel *disco
 			dumpWriter.WriteString(msg.Content + "\n")
 		}
 	}
+
+	log.Printf("Done dump for %s\n", channel.Name)
